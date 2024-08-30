@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar Kolase</title>
+</head>
+<body>
+
+<h1>Gambar Kolase</h1> 
+
+<div class="container">
+
+    <div class="row row-1">
+        <div class="item">
+            <img src="untara.png" alt="Logo 1">
+            <p>TANGERANG RAYA<br>LOGO UNIKA</p>
+        </div>
+        <div class="item">
+            <img src="untara.png" alt="Logo 2">
+            <p>TANGERANG RAYA<br>LOGO UNIKA</p>
+        </div>
+        <div class="item">
+            <img src="untara.png" alt="Logo 3">
+            <p>TANGERANG RAYA<br>LOGO UNIKA</p>
+        </div>
+        <div class="item">
+            <img src="untara.png" alt="Logo 4">
+            <p>TANGERANG RAYA<br>LOGO UNIKA</p>
+        </div>
+    </div>
+
+
+    <div class="row row-2">
+        <div class="item">
+            <img src="untara.png" alt="Logo 5">
+            <p>TANGERANG RAYA<br>LOGO UNIKA</p>
+        </div>
+        <div class="item">
+            <img src="untara.png" alt="Logo 6">
+            <p>TANGERANG RAYA<br>LOGO UNIKA</p>
+        </div>
+        <div class="item">
+            <img src="untara.png" alt="Logo 7">
+            <p>TANGERANG RAYA<br>LOGO UNIKA</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 20px;
+        background-color: #f0f0f0;
+    }
+    h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .row {
+        display: grid;
+        gap: 60px;
+    }
+    .row-1 {
+        margin: 10;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .row-2 {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .item {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .item img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+    .item p {
+        margin: 10px 0 0 0;
+        font-size: 14px;
+        color: #333;
+    }
+</style>
+</body>
+</html>
+
+
+
+
+
+
+
+<p>by Harry Septoni Armando Nadapdap</p>
