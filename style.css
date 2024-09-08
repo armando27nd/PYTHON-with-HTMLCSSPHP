@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.judul{
+    text-align: center;
+    background-color: darkblue;
+    color: yellow;
+    padding: 15px;
+    margin-bottom: 10px;
+
+}
+
+@keyframes gerakan_judul{
+    from{
+        background-color: yellow;
+        padding: 0;
+        width: 200px;
+        transform: rotate(360deg);
+
+    }
+    
+    to{
+        background-color: aqua;
+        padding: 10px;
+        width: 100%;
+        transform:  rotate(30deg);
+    }
+}
+
+.animasi{
+    text-align: center;
+    font-size:  10px;
+    /* background-color: yellow; */
+    animation-name: gerakan_judul;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes gerakan_ujung {
+    0%{
+        position: fixed;
+        top: 0;
+        left: 0;
+        
+
+
+    }
+
+    25%{
+        position: fixed;
+        top: 0;
+        left: 100%;
+
+        transform: translateX(-100%);
+        
+    }
+    
+    50%{
+        position: fixed;
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%,-100%);
+    }
+
+    100%{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+.bergerak{
+    position: fixed;
+
+}
